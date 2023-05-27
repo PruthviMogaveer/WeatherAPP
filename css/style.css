@@ -14,6 +14,13 @@
 html body {
   background-image: url(../image/background3.jpg);
 }
+.title {
+  text-transform: capitalize;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
 .main {
   text-align: center;
   margin: 3rem;
