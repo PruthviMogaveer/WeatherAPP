@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="icon" type="image/x-icon" href="./image/favicon.png" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
-</head>
+    <title>Weather info</title>
+  </head>
 
-<body>
+  <body>
     <div class="main">
-        <div class="weather">
-            <div class="title">weather App</div>
-            <div class="search">
-                <input type="text" id="inputCity" class="inputCity" placeholder="Enter city " />
-                <button id="searchCity" class="searchCity" onclick="getWeatherData()">
-                    Search
-                </button>
-            </div>
-            <div class="weatherInfo" id="weatherInfo">
-                <h2 id="cityName" class="cityName"></h2>
-                <div class="weatherType">
-                    <h3 id="weatherTypeInfo"></h3>
-                    <div id="weatherTypeImage"></div>
-                </div>
-                <div class="weatherTempInfo">
-                    <h3 class="temp"><span id="temp"></span>°</h3>
-                    <div class="minMaxTempWrap">
-                        <div class="minTemp">
-                            <div class="minTempTitle">min</div>
-                            <div><span id="minTemp">--</span>°</div>
-                        </div>
-                        <div class="vl"></div>
-                        <div class="maxTemp">
-                            <div class="maxTempTitle">max</div>
-                            <div><span id="maxTemp">--</span>°</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="weather">
+        <div class="title">weather App</div>
+        <div class="search">
+          <input
+            type="text"
+            id="inputCity"
+            class="inputCity"
+            placeholder="Enter city "
+          />
+          <button id="searchCity" class="searchCity" onclick="getWeatherData()">
+            Search
+          </button>
         </div>
-        <div id="infoError" class="infoError"></div>
+        <div class="weatherInfo" id="weatherInfo">
+          <h2 id="cityName" class="cityName"></h2>
+          <div class="weatherType">
+            <h3 id="weatherTypeInfo"></h3>
+            <div id="weatherTypeImage"></div>
+          </div>
+          <div class="weatherTempInfo">
+            <h3 class="temp"><span id="temp"></span>°</h3>
+            <div class="minMaxTempWrap">
+              <div class="minTemp">
+                <div class="minTempTitle">min</div>
+                <div><span id="minTemp">--</span>°</div>
+              </div>
+              <div class="vl"></div>
+              <div class="maxTemp">
+                <div class="maxTempTitle">max</div>
+                <div><span id="maxTemp">--</span>°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="infoError" class="infoError"></div>
     </div>
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>
